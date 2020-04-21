@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "shuffling": "../../components/home/shuffling/shuffling",
+    "searchbar": "../../components/home/searchbar/searchbar",
+    "entrance": "../../components/home/entrance/entrance",
+    "optimization": "../../components/optimization/optimization",
+    "near": "/components/home-list/index"
+  },
+  "navigationBarTextStyle": "black"
+}

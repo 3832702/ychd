@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "related": "../../components/personal/related/index",
+    "categories": "../../components/personal/categories/index",
+    "product-list": "/components/product-list/product-list"
+  },
+  "navigationBarTextStyle": "black"
+}

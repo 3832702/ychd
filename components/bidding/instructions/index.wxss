@@ -1,0 +1,37 @@
+.s-instructions {
+  width: 100%;
+  padding-bottom:110rpx;
+  background:#fff;
+  padding-top:12rpx;
+}
+
+.s-instructions-head {
+  width: 100%;
+  height: 92rpx;
+  line-height: 92rpx;
+  font-size: 40rpx;
+  color:#fa6664;
+  text-align:center;
+}
+
+.s-instructions-list {
+  width: 690rpx;
+  box-sizing:border-box;
+  border:1px solid #fa6465;
+  border-radius:10rpx;
+  margin:0 auto;
+  padding:30rpx 0;
+}
+
+.s-instructions-item {
+  font-size: 26rpx;
+  color:#808080;
+  line-height: 46rpx;
+  box-sizing:border-box;
+  padding:0 37rpx;
+  letter-spacing:4rpx;
+}
+
+.colorfb6564 {
+  color:#fb6564;
+}

@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "header": "/components/header/header",
+    "info": "/components/bidding/info/index",
+    "current": "/components/bidding/current/index",
+    "record": "/components/bidding/record/record",
+    "instructions": "/components/bidding/instructions/index",
+    "footer": "/components/bidding/footer/index",
+    "city": "/components/bidding/city/index"
+  },
+  "navigationBarTextStyle": "black"
+}

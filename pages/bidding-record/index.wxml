@@ -1,0 +1,135 @@
+<!-- 头部 -->
+<header is_000="{{ true }}" bg="#fff"  title="竞拍记录"></header>
+
+<!--
+  名称
+  类型
+  状态   未中  已中   去支付  去编辑 
+  我的出价
+  展示时间
+-->
+<view class="s-record">
+ <view class="s-record-list" catchtap='jumpPage'>
+    <view class="s-record-item">
+      <view class="s-record-img-wrap">
+        <image class="s-record-img"></image>
+      </view>
+      <view class="s-record-info">
+        <view class="s-record-name">广告名称</view>
+        <view class="s-record-type">广告类型： 商家</view>
+        <view class="s-record-time">展示时间: 2018.09.10</view>
+      </view>
+    </view>
+    <view class="s-record-more">
+      <view class="s-record-more-price">我的出价: ￥100.00</view>
+      <view class="s-record-more-status">状态： 竞拍中</view>
+    </view>
+  </view>
+
+  <view class="s-record-list" catchtap='jumpPage'>
+    <view class="s-record-item">
+      <view class="s-record-img-wrap">
+        <image class="s-record-img"></image>
+      </view>
+      <view class="s-record-info">
+        <view class="s-record-name">广告名称</view>
+        <view class="s-record-type">广告类型： 商家</view>
+        <view class="s-record-time">展示时间: 2018.09.10</view>
+      </view>
+    </view>
+    <view class="s-record-more">
+      <view class="s-record-more-price">我的出价: ￥100.00</view>
+      <view class="s-record-more-status"><view class="s-record-more-submit">去支付</view></view>
+      <view hidden class="s-record-more-status"><view class="s-record-more-submit">上传广告</view></view>
+      <view hidden class="s-record-more-status">状态： 竞拍中</view>
+      <view hidden class="s-record-more-status">状态： 已完成</view>
+      <view hidden class="s-record-more-status">状态： 广告审核中</view>
+      <view hidden class="s-record-more-status">广告未通过审核，请 <view class="s-record-more-submit">重新上传</view></view>
+    </view>
+  </view>
+
+  <view class="s-record-list" catchtap='jumpPage'>
+    <view class="s-record-item">
+      <view class="s-record-img-wrap">
+        <image class="s-record-img"></image>
+      </view>
+      <view class="s-record-info">
+        <view class="s-record-name">广告名称</view>
+        <view class="s-record-type">广告类型： 商家</view>
+        <view class="s-record-time">展示时间: 2018.09.10</view>
+      </view>
+    </view>
+    <view class="s-record-more">
+      <view class="s-record-more-price">我的出价: ￥100.00</view>
+      <view class="s-record-more-status"><view class="s-record-more-submit">上传广告</view></view>
+    </view>
+  </view>
+
+    <view class="s-record-list" catchtap='jumpPage'>
+    <view class="s-record-item">
+      <view class="s-record-img-wrap">
+        <image class="s-record-img"></image>
+      </view>
+      <view class="s-record-info">
+        <view class="s-record-name">广告名称</view>
+        <view class="s-record-type">广告类型： 商家</view>
+        <view class="s-record-time">展示时间: 2018.09.10</view>
+      </view>
+    </view>
+    <view class="s-record-more">
+      <view class="s-record-more-price">我的出价: ￥100.00</view>
+      <view class="s-record-more-status">状态： 广告审核中</view>
+    </view>
+  </view>
+
+    <view class="s-record-list" catchtap='jumpPage'>
+    <view class="s-record-item">
+      <view class="s-record-img-wrap">
+        <image class="s-record-img"></image>
+      </view>
+      <view class="s-record-info">
+        <view class="s-record-name">广告名称</view>
+        <view class="s-record-type">广告类型： 商家</view>
+        <view class="s-record-time">展示时间: 2018.09.10</view>
+      </view>
+    </view>
+    <view class="s-record-more">
+      <view class="s-record-more-price">我的出价: ￥100.00</view>
+      <view class="s-record-more-status">广告未通过审核，请 <view class="s-record-more-submit">重新上传</view></view>
+    </view>
+  </view>
+
+  <view class="s-record-list" catchtap='jumpPage'>
+    <view class="s-record-item">
+      <view class="s-record-img-wrap">
+        <image class="s-record-img"></image>
+      </view>
+      <view class="s-record-info">
+        <view class="s-record-name">广告名称</view>
+        <view class="s-record-type">广告类型： 商家</view>
+        <view class="s-record-time">展示时间: 2018.09.10</view>
+      </view>
+    </view>
+    <view class="s-record-more">
+      <view class="s-record-more-price">我的出价: ￥100.00</view>
+      <view class="s-record-more-status">状态： 已完成</view>
+    </view>
+  </view>
+
+  <view class="s-record-list" catchtap='jumpPage'>
+    <view class="s-record-item">
+      <view class="s-record-img-wrap">
+        <image class="s-record-img"></image>
+      </view>
+      <view class="s-record-info">
+        <view class="s-record-name">广告名称</view>
+        <view class="s-record-type">广告类型： 商家</view>
+        <view class="s-record-time">展示时间: 2018.09.10</view>
+      </view>
+    </view>
+    <view class="s-record-more">
+      <view class="s-record-more-price">我的出价: ￥100.00</view>
+      <view class="s-record-more-status">状态： 已失败</view>
+    </view>
+  </view>
+</view>

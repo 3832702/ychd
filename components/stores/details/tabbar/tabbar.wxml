@@ -1,0 +1,63 @@
+<!--<view class="s-tabbar">
+  <view class="s-tabbar-t">
+    <view class="s-tabbar-desc s-tabbar-desc-1">商家简介: <text class="s-tabbar-desc-sub">{{ storeInfo.store_about }}</text></view>
+    <view class="s-tabbar-item">
+      <button 
+        class="{{ isFocus ? 's-tabbar-focus1': 's-tabbar-focus' }}"
+        catchtap='focusHandler'
+        hover-class="none"
+      >
+        {{ isFocus ? '已': "" }}关注
+      </button>
+    </view>
+  </view>
+  <view class="s-tabbar-t">
+    <view class="s-tabbar-desc">营业时间: <text class="s-tabbar-desc-text"> {{ storeInfo.store_hours ? storeInfo.store_hours: '9:00 - 18:00' }}</text></view>
+  </view>
+  <view catchtap='locationHandler' class="s-tabbar-address">
+    店铺地址: <text class="s-tabbar-desc-text">{{ storeInfo.address }}</text>
+    <view class="s-tabbar-address-ico"></view>
+  </view>
+  <view style="top:{{ statusBarHeight }}" class="s-tabbar-list">
+    <view 
+      class="s-tabbar-item s-tabbar-search"
+      catchtap='jumpSearch'
+    >
+    </view>
+  </view>
+</view>
+-->
+
+<view class="s-info">
+  <view class="s-avatar-l">
+    <view class="s-avatar">
+      <image src="{{ storeInfo.store_head }}" class="s-avatar"></image>
+    </view>
+    <view class="s-stars">
+      <text class="s-stars-item"></text>
+      <text class="s-stars-item"></text>
+      <text class="s-stars-item"></text>
+      <text class="s-stars-item"></text>
+      <text class="s-stars-item"></text>
+    </view>
+    <view class="s-fans">粉丝数 1000万</view>
+  </view>
+  <view class="s-avatar-r">
+    <view class="s-info-title">
+      <text>{{ storeInfo.store_name }}</text>
+      <button 
+        class="{{ isFocus ? 's-tabbar-focus1': 's-tabbar-focus' }}"
+        catchtap='focusHandler'
+        hover-class="none"
+      >
+        {{ isFocus ? '已': "" }}关注
+      </button>
+    </view>
+    <view class="s-info-time">营业时间: {{ storeInfo.store_hours ? storeInfo.store_hours: '9:00 - 18:00' }}</view>
+    <view class="s-info-desc">简介: {{ storeInfo.store_about }}</view>
+    <view catchtap='locationHandler' class="s-info-address">
+      <text class="s-tabbar-desc-text">地址:{{ storeInfo.address }}{{ storeInfo.address }}</text>
+      <view class="s-tabbar-address-ico"></view>
+    </view>
+  </view>
+</view>

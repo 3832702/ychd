@@ -1,0 +1,48 @@
+<!-- 头部 -->
+<header bg="#fff" is_000="{{ true }}" isShare="{{ isShare }}" title="{{ storeInfo.store_name }}"></header>
+
+<!-- 横幅 -->
+<banner
+  store_banner="{{ store_banner }}"  
+>
+</banner>
+
+<!-- 简介 --->
+<tabbar
+  isFocus="{{ isFocus }}"
+  bind:focusHandler="focusHandler"
+  storeInfo="{{ storeInfo }}"
+  store_id="{{ store_id }}"
+>
+</tabbar>
+
+<!-- 商品列表 -->
+<listbar
+  goods="{{ goods }}"
+>
+</listbar>
+
+<!-- 底部导航 -->
+<footer
+  storeInfo="{{ storeInfo }}"
+  store_id="{{ store_id }}"
+></footer>
+
+<view class="s-ad">
+  <view class="s-ad-head">广告位</view>
+  <image class="s-ad-img" src="/static/image/shuffling_4.jpg"></image>
+</view>
+
+<!-- 授权按钮 -->
+<view hidden="{{ unionId }}" catchtouchmove='bubbleHandler' class="s-prompt">
+  <view class="s-prom">
+    <button 
+      open-type="getUserInfo"
+      hover-class="none" 
+      bindgetuserinfo="bindgetuserinfo" 
+      class="s-prom-button"
+      lang="zh_CN"
+    >
+    </button>
+  </view>
+</view>

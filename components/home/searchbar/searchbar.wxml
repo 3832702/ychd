@@ -1,0 +1,9 @@
+<view style="top:{{ top }}" class="s-searchtab">
+  <view class="s-city">
+    <view catchtap='getLocation' class="s-city-text">{{ city }}</view>
+  </view>
+  <view style="top:{{ searchtop }}px" catchtap='jumpPage' class="s-search">
+    <view class="s-search-input" placeholder="奶瓶" type="text">奶瓶</view>
+    <view class="s-search-btn"></view>
+  </view>
+</view>

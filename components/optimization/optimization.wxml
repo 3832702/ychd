@@ -1,0 +1,19 @@
+<view class="s-optimization">
+  <view catchtap='jumpHandler' class="s-optimization-head">
+    <text class="s-optimization-head-title">优选门店</text>
+    <text class="s-optimization-head-more">更多</text>
+  </view>
+  <swiper display-multiple-items="3" class="s-optimization-swiper">
+    <swiper-item 
+      wx:for="{{ optimization }}" 
+      wx:key="{{ index }}" 
+      class="s-optimization-item"
+      catchtap="jumpStores"
+      data-index="{{ index }}"
+    >
+      <image lazy-load src="{{ item.store_head }}" class="s-optimization-img"></image>
+      <text style="color:#333333;font-size:30rpx;font-weight:bold;width:85%;line-height:60rpx;" class="s-optimization-title">{{ item.store_name }}</text>
+      <text style="color:#818181;width:82%;" class="s-optimization-title">{{ item.address }}</text>
+    </swiper-item>
+  </swiper>
+</view>

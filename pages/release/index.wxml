@@ -1,0 +1,144 @@
+<!-- 头部 -->
+<header bg="#fb6464" title="发布商品"></header>
+
+<view class="s-release">
+  <view class="s-release-head">商品信息</view>
+  <view class="s-avatar">
+    <text class="s-avatar-text">封面图片</text>
+    <view 
+      class="s-avatar-img s-add-img" 
+      wx:if="{{ avataData.length === 0 }}"
+      catchtap='uploadCoverAvatar'
+    >
+      <view class="s-add-img-ico"></view>
+    </view>
+    <view catchtap='uploadCoverAvatar' class="s-avatar-img" wx:else>
+      <image 
+        wx:for="{{ avataData }}" 
+        wx:key="{{ index }}" 
+        src="{{ item }}"
+      ></image>
+      <view class="s-avatar-title">点击更换图片</view>
+    </view>
+  </view>
+  <view class="s-release-wrap">
+    <text class="s-release-text">商品名称</text>
+    <input 
+      class="s-release-name" 
+      maxlength="30" 
+      placeholder="请输入商品名称"
+      value="{{ goodsName }}"
+      bindinput='getGoodsName'
+    >
+    </input>
+  </view>
+  <view class="s-class">
+    <text class="s-release-text">商品分类</text>
+    <picker 
+      bindchange="bindPickerChange" 
+      value="{{ index }}" 
+      range="{{ array }}"
+      class="picker-wrap"
+    >
+      <view class="picker">{{array[index]}}</view>
+    </picker>
+  </view>
+  <view class="s-release-wrap">
+    <text space="nbsp" class="s-release-text">活动价格</text>
+    <input 
+      class="s-release-name" 
+      maxlength="11" 
+      placeholder="请输入商品活动价"
+      value="{{ goodsNewPrice }}"
+      bindinput='getGoodsNewPrice'
+      type="digit"
+    >
+    </input>
+  </view>
+  <view class="s-release-wrap">
+    <text class="s-release-text">商品原价</text>
+    <input 
+      class="s-release-name" 
+      maxlength="11" 
+      placeholder="请输入商品原价"
+      value="{{ goodsPrice }}"
+      bindinput='getGoodsPrice'
+      type="digit"
+    >
+    </input>
+  </view>
+  <view class="s-release-wrap">
+    <text class="s-release-text">开始时间</text>
+    <picker
+      mode="date"
+      value="{{ goodsActivityTime }}"
+      start="{{ startTime }}"
+      end="2022-09-01"
+      bindchange="bindDateChange"
+      class="picker-wrap"
+    >
+      <view class="picker">{{ goodsActivityTime }}</view>
+    </picker>
+  </view>
+  <view class="s-release-wrap">
+    <text class="s-release-text">结束时间</text>
+    <picker
+      mode="date"
+      value="{{ goodsEndTime }}"
+      start="{{ startTime }}"
+      end="2022-09-01"
+      bindchange="bindEndChange"
+      class="picker-wrap"
+    >
+      <view class="picker">{{ goodsEndTime }}</view>
+    </picker>
+  </view>
+  <view class="end-release"></view>
+
+  <view class="s-desc">
+    <view class="s-release-head">商品描述</view>
+    <view class="s-desc-input-wrap">
+      <textarea 
+        cursor-spacing="40" 
+        placeholder-class="s-desc-placeholder" 
+        placeholder="请输入商品描述" 
+        class="s-desc-input"
+        bindinput='getDescHandler'
+        value="{{ descStr }}"
+        maxlength='1500'
+      >
+      </textarea>
+    </view>
+    <view class="s-img-list">
+        <view 
+          wx:for="{{ imgViewList }}" 
+          wx:key="{{ index }}" 
+          class="s-img-item s-img-itemimg"
+        >
+          <image lazy-load mode="aspectFit" src="{{ item }}"></image>
+          <text 
+            data-index="{{ index }}" 
+            catchtap='removeImageHandler' 
+            class="s-img-remove"
+          >
+          </text>
+        </view>
+        <view 
+          catchtap='takePhoto' 
+          hidden="{{ imgViewIndex >= 9 }}" 
+          class="s-img-item"
+        >
+          <view class="s-add-img-ico"></view>
+        </view>
+    </view>
+    <view class="s-prompt-1">图片大小请控制在2M以内</view>
+    <view catchtap='submitHandler' class="s-submit">发布商品</view>
+  </view>
+</view>
+
+<canvas 
+  style="width:{{ canWidth }}px;height:{{ canHeight }}px;position:fixed;left:{{ canWidth * 2 ? canWidth * 2 : 800 }}px;top:{{ canHeight * 2 ? canHeight * 2 : 2000 }}px" 
+  canvas-id='attendCanvasId' 
+  class='myCanvas'
+>
+</canvas>

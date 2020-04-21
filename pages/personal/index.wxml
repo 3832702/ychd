@@ -1,0 +1,85 @@
+<view class="s-head">
+  <swiper class="s-banner">
+    <swiper-item wx:for="{{ banners }}" wx:key="{{ index }}">
+      <image src="{{ item }}" class="slide-image" />
+    </swiper-item>
+  </swiper>
+  <view class="s-avatar">
+    <image src="{{ shopInfo.store_head ? shopInfo.store_head :avatarUrl }}"></image>
+  </view>
+  <view class="s-name">{{ shopInfo.store_name ? shopInfo.store_name: nickName }}</view>
+  <view class="s-desc">
+    简介: {{ shopInfo.store_about ? shopInfo.store_about: '此用户很懒，没有留下任何信息' }}
+  </view>
+</view>
+
+<!-- 相关信息 -->
+<related relatedData="{{ relatedData }}"></related>
+
+<!-- 栏目一 -->
+<categories 
+  shopInfo="{{ shopInfo }}" 
+  is_hide="{{ !store_id }}"  
+  routes="{{ routes }}" 
+  title="用户信息"
+>
+</categories>
+
+<!-- 栏目一 -->
+<categories  
+  is_hide="{{ !!store_id }}"
+  shopInfo="{{ shopInfo }}" 
+  routes="{{ routes1 }}" 
+  title="用户信息"
+  is_pass="{{ is_pass }}"
+>
+</categories>
+
+<!-- 栏目二 -->
+<categories 
+  shopInfo="{{ shopInfo }}" 
+  is_hide="{{ !store_id }}" 
+  routes="{{ setUp }}" 
+  title="管理设置"
+>
+</categories>
+
+<!-- 栏目三 -->
+<categories 
+  is_hide="{{ !store_id }}" 
+  routes="{{ shares }}" 
+  title="营销推广"
+  bind:getCodeHandler="getCode"
+  isHideShare="{{ false }}"
+>
+</categories>
+
+<!-- 栏目四 -->
+<categories
+  is_hide="{{ !audit_auth }}"
+  routes="{{ audit }}" 
+  title="后台管理"
+>
+</categories>
+
+<!-- 为你优选 -->
+<product-list
+  isTabHide="{{ true }}"
+  nearData="{{ nearData }}"
+  title="猜你喜欢"
+></product-list>
+
+
+<!-- 授权按钮 -->
+<view hidden="{{ unionId }}" catchtouchmove='bubbleHandler' class="s-prompt">
+  <view class="s-prom">
+    <button 
+      open-type="getUserInfo"
+      hover-class="none" 
+      bindgetuserinfo="bindgetuserinfo" 
+      class="s-prom-button"
+      lang="zh_CN"
+    >
+    </button>
+  </view>
+</view>

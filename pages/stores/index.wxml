@@ -1,0 +1,4 @@
+<!-- 头部 -->
+<header bg="#fb6464" title="分类列表"></header>
+
+<merchant-list isHeadHide="{{ isHeadHide }}"></merchant-list>

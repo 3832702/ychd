@@ -1,0 +1,30 @@
+<view class="s-module">
+  <view class="s-list-head">管理与设置</view>
+  <view class="s-my-list">
+    <view 
+      wx:for="{{ routes }}" 
+      wx:key="{{ index }}" 
+      class="s-my-item"
+      data-index="{{ index }}"
+      catchtap='jumpPage'
+    >
+      <text class="s-my-ico {{ 's-my-ico' + index }}"></text>
+      <text class="s-my-title">{{ item.name }}</text>
+    </view>
+  </view>
+</view>
+<view class="s-module">
+  <view class="s-list-head">营销与推广</view>
+  <view class="s-my-list">
+    <button 
+      wx:for="{{ shares }}" 
+      wx:key="{{ index }}" 
+      class="s-my-item"
+      data-index="{{ index }}"
+      catchtap='shareHandler'
+    >
+      <text class="s-my-ico {{ 's-share-ico' + index }}"></text>
+      <text class="s-my-title">{{ item.name }}</text>
+    </button>
+  </view>
+</view>

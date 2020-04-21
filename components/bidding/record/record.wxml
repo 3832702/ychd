@@ -1,0 +1,25 @@
+<view class="s-record">
+  <view class="s-record-head">
+    <text>竞拍记录 50条</text> 
+  </view>
+  <view class="s-record-list">
+    <view class="s-record-item s-record-first">
+      <view class="s-record-item-1"><text>小梁</text></view>
+      <text class="s-record-item-2">领先</text>
+      <view class="s-record-item-3">河南漯河</view>
+      <text class="s-record-item-4">25.5</text>
+    </view>
+    <view class="s-record-item">
+      <view class="s-record-item-1"><text>小梁</text></view>
+      <text class="s-record-item-2">未中</text>
+      <view class="s-record-item-3">河南漯河</view>
+      <text class="s-record-item-4">25.5</text>
+    </view>
+    <view class="s-record-item">
+      <view class="s-record-item-1"><text>小梁</text></view>
+      <text class="s-record-item-2">未中</text>
+      <view class="s-record-item-3">河南漯河</view>
+      <text class="s-record-item-4">25.5</text>
+    </view>
+  </view>
+</view>

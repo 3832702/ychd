@@ -1,0 +1,55 @@
+<!-- 头部 -->
+<header bg="#fb6464" title="店铺审核列表"></header>
+
+<view style="top: {{ statusBarHeight }};padding-top:88rpx;" class="s-tab">
+<view catchtap='searchTabHandler' data-index="0" class="s-tab-item {{ activeIndex == 0 ? 's-tab-item-active': '' }}">待审核</view>
+  <view catchtap='searchTabHandler' data-index="1" class="s-tab-item {{ activeIndex == 1 ? 's-tab-item-active': '' }}">已通过</view>
+  <view catchtap='searchTabHandler' data-index="2" class="s-tab-item {{ activeIndex == 2 ? 's-tab-item-active': '' }}">未通过</view>
+  <view class="s-tab-mask {{ 's-tab-mask' + activeIndex }}"></view>
+</view>
+
+<view class="s-list">
+  <view wx:for="{{ list }}" wx:key="{{ item.stores_id }}" class="s-item" >
+    <view data-index="{{ index }}" catchtap='jumpHandler' class="s-item-t">
+      <image lazy-load src="{{ item.store_head }}" class="s-img"></image>
+      <view class="s-info">
+        <view class="s-title">{{ item.store_name }}</view>
+        <!--<text class="s-desc s-desc-price">￥{{ item.goods_new_price }}</text>-->
+        <text class="s-desc">管理员 : {{ item.audit_user ? item.audit_user: '-----' }}</text>
+        <text class="s-desc">处理时间 : {{ item.audit_time ? item.audit_time: '-----' }}</text>
+      </view>
+    </view>
+    <view class="s-more">
+      <view 
+        class="s-more-edit s-more-edit1"
+        catchtap='auditHandler'
+        data-index="{{ index }}"
+        data-ispass="0"
+        hidden="{{ activeIndex == 0 }}"
+      >
+        待审核
+      </view>
+      <view 
+        class="s-more-edit"
+        catchtap='auditHandler'
+        data-index="{{ index }}"
+        data-ispass="1"
+        hidden="{{ activeIndex == 1 }}"
+      >
+        通过
+      </view>
+      <view 
+        class="s-more-edit s-more-edit-not"
+        catchtap='auditHandler'
+        data-index="{{ index }}"
+        data-ispass="2"
+        hidden="{{ activeIndex == 2 }}"
+      >
+        不通过
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view style="display:{{ isNot ? 'flex': 'none' }}" class="s-not">当前栏目暂无待处理事项</view>

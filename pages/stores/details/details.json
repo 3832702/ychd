@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "tabbar": "/components/stores/details/tabbar/tabbar",
+    "banner": "/components/stores/details/banner/banner",
+    "listbar": "/components/stores/details/listbar/listbar",
+    "footer": "/components/stores/details/footer/footer",
+    "header": "/components/header/header"
+  },
+  "navigationBarBackgroundColor": "#000000",
+  "navigationBarTextStyle": "black"
+}

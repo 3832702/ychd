@@ -1,0 +1,144 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.5.1",
+	"appid": "wx561980319de25015",
+	"projectname": "%E5%8F%B7%E5%BA%97",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 15,
+			"list": [
+				{
+					"id": 0,
+					"name": "分享进入商品",
+					"pathName": "pages/product/index",
+					"query": "goods_id=19&share=1"
+				},
+				{
+					"id": -1,
+					"name": "店铺页",
+					"pathName": "pages/stores/details/details",
+					"query": "store_id=15"
+				},
+				{
+					"id": 2,
+					"name": "精品店",
+					"pathName": "pages/open-shop/open-shop",
+					"query": "store_id=13",
+					"scene": "1047"
+				},
+				{
+					"id": 3,
+					"name": "分享进入商品",
+					"pathName": "pages/product/index",
+					"query": "goods_id=109&share=1",
+					"scene": "1047"
+				},
+				{
+					"id": 4,
+					"name": "精品店",
+					"pathName": "pages/management/index",
+					"query": "store_id=0",
+					"scene": "1047"
+				},
+				{
+					"id": -1,
+					"name": "发布商品",
+					"pathName": "pages/release/index",
+					"query": "",
+					"scene": "1047"
+				},
+				{
+					"id": 6,
+					"name": "店铺页",
+					"pathName": "pages/stores/details/details",
+					"query": "store_id=22"
+				},
+				{
+					"id": 7,
+					"name": "商品列表",
+					"pathName": "pages/release-list/index",
+					"query": "store_id=22"
+				},
+				{
+					"id": -1,
+					"name": "店铺管理",
+					"pathName": "pages/open-shop/open-shop",
+					"query": "store_id=22"
+				},
+				{
+					"id": 9,
+					"name": "商品管理",
+					"pathName": "pages/product/index",
+					"query": "scene=26,oGwVH0lqS5-u2ts2Z2s1zCUjQWeM",
+					"scene": "1047"
+				},
+				{
+					"id": -1,
+					"name": "小程序码",
+					"pathName": "pages/stores/details/details",
+					"query": "scene=22,oGwVH0lqS5-u2ts2Z2s1zCUjQWeM",
+					"scene": "1047"
+				},
+				{
+					"id": -1,
+					"name": "新个人中心",
+					"pathName": "pages/personal/index",
+					"query": "",
+					"scene": "1047"
+				},
+				{
+					"id": -1,
+					"name": "海报",
+					"pathName": "pages/posters/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "竞标",
+					"pathName": "pages/bidding/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "审核",
+					"pathName": "pages/audit/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "竞拍",
+					"pathName": "pages/bidding/index"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,33 @@
+@import "../../static/style/common.wxss";
+
+.cropper{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cropper-buttons{
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.cropper-buttons {
+  position:fixed;
+  z-index:1111111111111;
+  bottom:0;
+  left:0;
+  right:0;
+  height: 150rpx;
+}
+
+.getCropperImage, .upload, .cancel {
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align:center;
+}
+
+.btn{
+  border-radius: 6rpx;
+  color: #ffffff;
+  font-size: 28rpx;
+}

@@ -1,0 +1,6 @@
+<view class="s-details">
+  <view class="s-details-content">
+    <image lazy-load wx:for="{{ detailsData.goods_banner }}" wx:key="{{ index }}" mode="widthFix" src="{{ item }}"></image>
+    <text>{{ detailsData.content }}</text>
+  </view>
+</view>

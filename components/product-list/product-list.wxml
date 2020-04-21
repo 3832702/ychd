@@ -1,0 +1,54 @@
+<view hidden="{{ !nearData.length }}" class="s-near">
+  <view hidden="{{ isHeadHide }}" class="s-near-head">
+    <text class="s-near-head-title">{{ title }}</text>
+  </view>
+  <view hidden="{{ isTabHide }}" class="s-tabbar">
+    <view 
+      class="s-tabbar-item {{ activeIndex == 0 ? 's-active': '' }}"
+      catchtap='seatchHandler'
+      data-index="0"
+    >
+      最热商品
+    </view>
+    <view 
+      class="s-tabbar-item {{ activeIndex == 1 ? 's-active': '' }}"
+      catchtap='seatchHandler'
+      data-index="1"
+    >
+      最新商品
+    </view>
+    <view 
+      class="s-tabbar-item {{ activeIndex == 2 ? 's-active': '' }}"
+      catchtap='seatchHandler'
+      data-index="2"
+    >
+      离你最近
+    </view>
+  </view>
+  <view class="s-near-list">
+    <view 
+      hidden="{{ !adImg }}"
+      class="s-near-item s-ad-item" 
+    >
+      <image hidden="{{ !adImg }}" src="{{ adImg }}" class="s-ad-img"></image>
+    </view>  
+    <view 
+      class="s-near-item" 
+      catchtap='jumpPage'
+      data-index="{{ index }}"
+      wx:for="{{ nearData }}"
+      wx:key="{{ index }}"
+    >
+      <image lazy-load src="{{ item.goods_cover }}" class="s-near-img"></image>
+      <view class="s-near-info">
+        <view class="s-near-title">{{ item.goods_name }}</view>
+        <view class="s-near-address">
+          <text class="s-near-address-text">{{ item.goods_swa }}人浏览过</text>
+          <text style="display:{{ item.distance ? 'inline-block': 'none' }}" class="s-near-address-distance">{{ item.distance }}km</text>
+        </view>
+        <text class="s-near-shop">{{ item.store_name }}</text>
+        <text class="s-near-desc">{{ item.content }}</text>
+      </view>
+    </view>
+  </view>
+</view>

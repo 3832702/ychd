@@ -1,0 +1,77 @@
+.s-city {
+  width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,.1);
+  position:fixed;
+  left:0;
+  top:0;
+}
+
+.s-city-input {
+  width: 540rpx;
+  height: 256rpx;
+  background:#fff;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+  border-radius:10px;
+  font-size:28rpx;
+  color:#060606;
+}
+
+.s-city-prompt {
+  width: 100%;
+  height: 168rpx;
+  box-sizing:border-box;
+  padding:36rpx 0;
+  border-bottom:1px solid #d8d7d5;
+}
+
+.s-city-prompt-t {
+  width: 460rpx;
+  height: 46rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.s-city-prompt-t text {
+  width: 24rpx;
+  height: 26rpx;
+  background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAAACXBIWXMAAAsSAAALEgHS3X78AAACJklEQVRIiZ2W4ZXaMBCEP9wAdIBTAaSCIxWcO4ASSAXrrSC+Cg46uBKggvgqONMBqcD54VEQwsaQfY+HhHZnVqvRiknbtoyZu+dAnvzcmFkzFjsZIhDoFiiA+UD8CfgAqiGyGwJ3nwEVsE58j8n8JZnvga2ZnQcJ3H2pjELGR2X30Zeduxd0uwxkJ6Aws/qGQOAHYAr8keOhD7iHaKXEQuwqkEzatg1lqZX5pxzOA3hDJDMluNBOlmZ2zrReCTxk/hQ4gGIKYcyFyaQsyxz4kt9PM6t6ssuBkotUG6DsU467b4Ffmn7LxApwGgDfKIE13WG+aPyltXQnFV2JAIqY4EYpkWShU9QPfYJkK/mkFrCKDFhqcuhxXJKoSsoKtZ5G8bEFrDyTE0Dfweb6buKD17hJfGILvvOMS736LFyYRVxvjReJT5+dMi7bKdJVXZa9pu/u3rh7Dbzrt318ayMLWIcM2A0RiGQDvHHR90LjN631WcDahZt8oJOfm1k5EBRaAvdaiLuXgAFHM1sFgiXwm6SPPGtJP/tuZnWmjGrAtbAb0PYY+Iyu3FO6StQAoReh0hzparz7jw3sFHuMy5wlTgVdN31194dJ5Puq2CuxXBHoAm3ozmL9CIl81orZpJ043UE4j9UjJAl4rzjuPfqxIq7e2+Tdvqu8QYIekk/tDC4v16is7xKIJKdrvwGQiLAY+280SiCS+L2FJ97thwgioh38608P2V/02ClleyqhtQAAAABJRU5ErkJggg==');
+  background-size:cover;
+  margin:0 5rpx 0 10rpx;
+}
+
+.s-city-prompt-b {
+  width: 460rpx;
+  height: 46rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  line-height: 46rpx;
+  text-align:center;
+}
+
+.s-city-btn {
+  width: 100%;
+  height: 88rpx;
+  display:flex;
+}
+
+.s-city-btn text {
+  width: 50%;
+  height: 100%;
+  text-align:center;
+  justify-content:center;
+  line-height: 88rpx;
+  color:#42b1ff;
+}
+
+.s-city-btn text:first-child {
+  border-right:1px solid #d8d7d5;
+}

@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/near/index",
+    "pages/stores/index",
+    "pages/product/index",
+    "pages/search/index",
+    "pages/stores/fans/fans",
+    "pages/stores/details/details",
+    "pages/stores/merchants/merchants",
+    "pages/stores/goods/goods",
+    "pages/management/index",
+    "pages/categories/index",
+    "pages/release-list/index",
+    "pages/store-list/index",
+    "pages/release/index",
+    "pages/cutInside/cutInside",
+    "pages/column-list/index",
+    "pages/qr-code/index",
+    "pages/personal/index",
+    "pages/posters/index",
+    "pages/bidding/index",
+    "pages/audit/index",
+    "pages/bidding-record/index",
+    "pages/wallet/index",
+    "pages/upload-ad/index",
+    "pages/audit-store/index"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "navigationBarTitleText": "壹城好店",
+    "navigationBarBackgroundColor": "#fb6464",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "selectedColor": "#fb6464",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "static/image/12.png",
+        "selectedIconPath": "static/image/121.png"
+      },
+      {
+        "pagePath": "pages/near/index",
+        "text": "附近",
+        "iconPath": "static/image/11.png",
+        "selectedIconPath": "static/image/111.png"
+      },
+      {
+        "pagePath": "pages/personal/index",
+        "text": "我的",
+        "iconPath": "static/image/13.png",
+        "selectedIconPath": "static/image/131.png"
+      }
+    ]
+  }
+}

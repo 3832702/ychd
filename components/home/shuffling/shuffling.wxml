@@ -1,0 +1,14 @@
+<swiper 
+  class="s-swiper" 
+  indicator-dots="{{ indicatorDots }}"
+  autoplay="{{ true }}"
+  circular
+>
+  <swiper-item 
+    class="s-swiper-item" 
+    wx:for="{{ shuffling }}" 
+    wx:key="{{ index }}"
+  >
+      <image src="{{ item.img_url }}" class="s-swiper-image" />
+  </swiper-item>
+</swiper>

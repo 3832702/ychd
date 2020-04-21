@@ -1,0 +1,11 @@
+<view class="s-banner-wrap">
+  <swiper class="s-banner">
+    <swiper-item 
+      class="s-banner-item"
+      wx:for="{{ store_banner }}"
+      wx:key="{{ index }}"
+    >
+      <image class="s-banner-img" src="{{ item }}"></image>
+    </swiper-item>
+  </swiper>
+</view>

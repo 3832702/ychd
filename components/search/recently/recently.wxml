@@ -1,0 +1,11 @@
+<view wx:if="{{ isHide }}" class="s-recently">
+  <view class="s-recently-head">最近搜索</view>
+  <view class="s-recently-list">
+    <view class="s-recently-item">最近搜索一</view>
+    <view class="s-recently-item">最近搜索一</view>
+    <view class="s-recently-item">最近搜索一</view>
+    <view class="s-recently-item">最近搜索一</view>
+    <view class="s-recently-item">最近搜索一</view>
+    <view class="s-recently-item">最近搜索一</view>
+  </view>
+</view>

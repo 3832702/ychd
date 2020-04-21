@@ -1,0 +1,49 @@
+page {
+  background:#f5f5f5;
+}
+
+.s-ad {
+  width: 730rpx;
+  margin:20rpx auto 0;
+  background:#fff;
+  border-radius:10rpx;
+  padding-bottom:100rpx;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+
+.s-ad-head {
+  width:100%;
+  font-size: 26rpx;
+  height: 40rpx;
+  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#ccc;
+  margin-bottom:20rpx;
+  padding-top:20rpx;
+}
+
+.s-ad-head:after {
+  content: " ";
+  width: 50rpx;
+  height: 1px;
+  background:#ccc;
+  margin-left: 30rpx;
+}
+
+.s-ad-head:before {
+  content: " ";
+  width: 50rpx;
+  height: 1px;
+  background:#ccc;
+  margin-right: 30rpx;
+}
+
+.s-ad-img {
+  width: 700rpx;
+  height: 250rpx;
+}

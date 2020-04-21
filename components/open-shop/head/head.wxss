@@ -1,0 +1,98 @@
+.s-shop-head {
+  width: 100%;
+  height: 322rpx;
+  background:#fb6464;
+  box-sizing:border-box;
+  padding:50rpx 30rpx 0;
+}
+
+.s-shop {
+  height: 100rpx;
+  display:flex;
+  align-items:center;
+  margin-bottom:40rpx;
+}
+
+.s-shop-img-wrap {
+  display:flex;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius:50%;
+  overflow:hidden;
+  background:rgba(0,0,0,.2);
+  margin-right:25rpx;
+}
+
+.s-shop-img {
+  width: 96rpx;
+  height: 96rpx;
+  margin:auto;
+  border-radius:50%;
+  overflow:hidden;
+}
+
+.s-shop-info {
+  width: 460rpx;
+  height: 100rpx;
+}
+
+.s-shop-name {
+  height: 48rpx;
+  line-height: 48rpx;
+  font-size: 30rpx;
+  color:#f9ffff;
+}
+
+.s-shop-score {
+  height: 52rpx;
+  display:flex;
+  align-items:center;
+}
+
+.s-shop-stars {
+  height: 24rpx;
+  display:flex;
+}
+
+.s-shop-stars-item {
+  width: 24rpx;
+  height: 24rpx;
+  background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABZElEQVRIS9WUTytEURjGf09JPoAPgGykSazsrNHsFGNhx16x4AMoUfbYismGYikbNoqFZuvf2kopjeLRqauuce/MvdNMcTbndN/3PL/79L7nFW1earM+fwtgewx4k3SV1XkuB7bPgVdJxZYDbI8A15FwQVIlCySzA9unwEQkWpY00zKA7UEg/sefQJ+kp0aQTA5sHwJTNWK7kuZzAaIuGQB6gZ5oD+fuFKFn4AF4jPZwrki6/M7/4cD2NLAPTb+Pj+BU0lEiIHy0HWxvN7KeEDdQklSOxxJrYHsJ2MgJWZC0U3sntci214CVjJBlSZtJuXW7yPYJMNkAciCplJbTCkDdR9cIcB+1aj0Tt5KGcjuw3QlUM9SgKqmrGcAwcBO7eAEsAh3AFjAai/VLustVZNuzwB4QZv+qpLO4gO1xYB0oAEVJoSF+rXptOge8SDpOs2873A8z6j0tL9Owy1CH1JT/D/gCsBRvGXbuewAAAAAASUVORK5CYII=") no-repeat;
+  background-size:cover;
+}
+
+.s-shop-score-txt {
+  margin-left: 12rpx;
+  font-size: 24rpx;
+  color:#fff;
+}
+
+.s-more {
+  height: 86rpx;
+  display:flex;
+}
+
+.s-more-item {
+  width: 33.333%;
+  height: 100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.s-more-item-num {
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align:center;
+  color:#fff;
+}
+
+.s-more-item-txt {
+  width: 100%;
+  height: 26rpx;
+  line-height:26rpx;
+  color:#fff;
+  font-size: 24rpx;
+  text-align:center;
+}

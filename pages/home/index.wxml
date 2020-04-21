@@ -1,0 +1,30 @@
+<view style="height:{{ statusBarHeight }};background:#fff" class="s-top-placeholder"></view>
+<view style="height:{{ statusBarHeight }};background:#fff;padding-bottom:80rpx;"></view>
+<!-- 定位及搜索 -->
+<searchbar 
+  city="{{ city }}"
+  top="{{ statusBarHeight }}"
+  bind:chooseLocation="chooseLocation"
+  searchtop="{{ searchtop }}"
+></searchbar>
+
+<!-- 轮播图 -->
+<shuffling shuffling="{{ shuffling }}"></shuffling>
+
+<!-- 入口 -->
+<entrance 
+  category="{{ category }}"
+>
+</entrance>
+
+<!-- 优选 -->
+<optimization
+  optimization="{{ optimization }}"
+>
+</optimization>
+
+<!-- 附近商家 -->
+<near 
+  nearData="{{ nearData }}"
+  bind:changeNearHandler="changeNearHandler"
+></near>

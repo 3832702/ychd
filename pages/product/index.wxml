@@ -1,0 +1,84 @@
+<!-- 头部 -->
+<!--<header 
+  isShare="{{ isShare }}"
+  bg="#fb6464" 
+  title="产品详情"
+
+  1 商品详情页  
+  商家页
+  首页
+
+
+  分享  详情页   => 店铺页
+        店铺  => 首页
+></header>-->
+
+<view  
+  style="top:{{ statusBarHeight }};transform:translateY(12rpx)" 
+  class="s-back"
+  wx:if="{{ !isShare }}"
+  catchtap='backHandler'
+>
+</view>
+
+<view  
+  style="top:{{ statusBarHeight }};transform:translateY(12rpx)" 
+  class="s-back-home"
+  catchtap='homeHandler'
+  wx:else
+>
+  <view class="s-back-home-ico"></view>
+</view>
+
+<!-- 产品信息 -->
+<goods
+  banners="{{ banners }}"
+  detailsData="{{ detailsData }}"
+  bind:collectHandler="collectHandler"
+  isCollect="{{ isCollect }}"
+  store_id="{{ store_id }}"
+  isShare="{{ isShare }}"
+>
+</goods>
+
+<!-- 产品描述 -->
+<details
+  detailsData="{{ detailsData }}"
+>
+</details>
+
+<!-- 为你优选 -->
+<product-list 
+  isTabHide="{{ true }}"
+  nearData="{{ nearData }}"
+  title="猜你喜欢"
+  adImg="{{ adImg }}"
+>
+</product-list>
+
+<!-- 底部导航 -->
+<footer
+  store_id="{{ store_id }}"
+  isShare="{{ isShare }}"
+  merchant_code="{{ merchant_code }}"
+></footer>
+
+<!--<view class="s-ad">
+  <view class="s-ad-head">广告位</view>
+  <image class="s-ad-img" src="/static/image/shuffling_4.jpg"></image>
+</view>
+-->
+
+<!-- 授权按钮 -->
+<view hidden="{{ unionId }}" catchtouchmove='bubbleHandler' class="s-prompt">
+  <view class="s-prom">
+    <button 
+      open-type="getUserInfo"
+      hover-class="none" 
+      bindgetuserinfo="bindgetuserinfo" 
+      class="s-prom-button"
+      lang="zh_CN"
+    >
+    </button>
+  </view>
+</view>

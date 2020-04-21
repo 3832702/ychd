@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "hot": "/components/search/hot/hot",
+    "recently": "/components/search/recently/recently",
+    "product-list": "/components/product-list/product-list",
+    "header": "/components/header/header"
+  }
+}

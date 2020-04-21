@@ -1,0 +1,68 @@
+.s-recently {
+  width: 100%;
+  background:#fff;
+  border-top:1px solid #e1e1e1;
+  border-bottom:1px solid #e1e1e1;
+}
+
+.s-recently-head {
+  width: 100%;
+  height: 70rpx;
+  display:flex;
+  align-items:center;
+  box-sizing:border-box;
+  padding:0 25rpx;
+  font-size:30rpx;
+  color:#989898;
+  margin-bottom:10rpx;
+}
+
+.s-recently-head:before {
+  content: " ";
+  width: 30rpx;
+  height: 30rpx;
+  margin-right:12rpx;
+  background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEM0lEQVRYR8WXa2hcVRDH/3Nut2s+iFkorWspqBRBKT6KtfVBfWG1KGoR13cwhnvn5IH2s6JsBUH84iOQPefehCjUamIVRQi+PlilL0QKtkjV+sk22kpDrfjK7t6RE3Zrstndu6Zber7eOf/5nTlzZ+YQzvKis+wf/wugUChcqJR6XEQ2ENH5InIBgCIRHRWRSSLaTUQTk5OTO/P5fKmVw7UEUCgUrlJKvQjgNmAGugzgKIAjIrIIQBbAUiJSFaeHAfQw8ydJEE0BhoaGMp7nDQF40J0UwDsi8m46nZ7o7u7+e7b4yMjIucVi8S4iyonI3RWYrQAGmPm3RiANAYaHh1eWSqVPiWgFgEEALzHzz0knct+jKLqoXC4/Q0Q9IvKT53k53/f31NtbFyCKokvjON4lIqKU2hQEwY5WHNfaGGPuIaJtIrJYKXVdEARf1drMA7DWLgGwT0Q6AazWWv9Qz7m1drOIHNRaf9QMLoqidXEcfyEix9Lp9Kru7u4Ts+3nARhjdhDRenePWusP64mPj497U1NT00Q0zswPJUXHwQJ4GcAYM7t8OrXmAIRheJ+IbAewlZkfayScz+cXZbPZmaRk5lwSgPtujPmMiG5VSl07Ox/mAFhrD1V+qZXNEm6BAJcR0QEAu5n5+ir0KQBr7WoAX4vIoNb6yWanWgiA07PWjgO4Xym1wvd9Vyv+q4TGmOeIaAsR3ZSU9QsFMMY8QERvA2BmDmsB3B1dEwTBeUQkZyICrliVSqWTALYx8yO1AAeJqMTMq5KSaqERqFzDcRH5Rmt98xwAa+1JEdmjtd7QKoCIfC4iWxrZe5433dnZuTeXy7neMbOMMfsBpLXWl5wOgMpms38BWJwEKyJPaK1HWwH4FoC7gsuTRN33MAw3icgVCba/ZzKZwVwuN121s9b+CmA/M99SG4GPAawNgiCTlIStANazqSSh64yu0HXVAjwL4Hml1Hrf979cqJNm+wqFQk4pNRbHcdDb2xvNAQjD8EoR2QfgNWZ+6kwAGGPG3LxQLBaXDAwMHJ8DUMnQHwEsT6VSF/f09Ey2E8IYM1OKRWSX1vqGqnbdZiQib2qtH20zwEwzArCOmffWBahEodqO79Vaf9AOCGut6y2vishbWuuHZ2vOmwcKhcJypZTrWh4RXR0EwfenAxGG4RoR2QngUEdHx5qurq4/mgJUonCHG69F5EQ7RjIATmdttQMmAjgDa+2dAF4HkBGRIc/zXvB9343iiasylLru6t4QB1Kp1O2NkrrpWB5F0bI4jl0Z3Sgi/wB4D8D2VsbyCuUIEW1m5j8bUbf0MDHGuLnvFSJaWhFyzeUYgMPVhwkRLXPzhYjEAN6P4/jpvr6+75LC1RKAExkdHT2nWCzeGMfxRleyncOap9kRABPlcvmN/v7+X5IcN/wNW93YLruWI9Auh7U6/wLVfwg/37A+9AAAAABJRU5ErkJggg==") no-repeat;
+  background-size:cover;
+
+}
+
+.s-recently-list {
+  width: 100%;
+}
+
+.s-recently-item {
+  width: 100%;
+  height: 90rpx;
+  box-sizing:border-box;
+  padding:0 20rpx;
+  font-size:26rpx;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  color:#979797;
+  position:relative;
+}
+
+.s-recently-item:after {
+  content: "";
+  width: 34rpx;
+  height: 34rpx;
+  background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAEWElEQVRYR7WYXWgcVRTHz3/WJBqwRCqo9cEqKlRKERs/0JdKEZSoWGtFbI0NZOdOErrQqpSAQtAHg7YqUbJ3ZoX4hca11EI/rFB8UqH1A0VEKhQtRM2D7YZaoVk29y932Vk225nd2TUZWNidued/fnvuveeeM5AWrnw+n5qbm3uA5HaSNwJYSXKliFwA8KuI2M9PjuPsS6fTv7UgLUgyeGpqqqdYLO4imQZwdRIbEflFRPKpVGpicHDwbDObhiC+73eLSIbkKIAVzcSinpM8B+C1Uqm0d2Rk5HycRixILpdbY4w5LCLXtwMQYTND8kHP836M0osECYLgYWPMNIDLlgiiLENyXkSe9jzv43rdi0CCINhMct9SAlzkFHjUdd1Pa+8vAtFa94rIlwC6lhNERP5xHOeWdDo9E/qpgkxOTl6RSqXs9rtymSHCaTqhlLoLAO2NKojWehzA7hiIYyKysXZ8QliS/BrAPTE7asjzPF0FyeVyVxljfheRS+sNSH7hed5GrXU/gHdagCGAJ3t6ej4pFApficidEdqFYrG4OpPJnCtHRGu9F8CuBv9yVCk1HgTBEyQ/TABThnBdd1prfR8AmwY6YvTHlVKjIchfCTLmTqXUGxWYD0QkFSO8AGBbQggr8beIrEIQBLeTPJFwzkOYTcaYPIBL6uwsxBa7NX3f7xMRu0XjIlE1NcbcC631SwCeTwhih5Vh6h2RLDmO83gIQfJABGicmzH4vm+T1+YWQKowdv5F5KCdJgCPKKUOW8AWIWzG3W8jchzAHS2CVGGy2ewGx3F6lFIH2oGo+P3BRuQPu1jaAKnC2C9BEMStm6bSJE/aiMwAuLbp6OgBO5RSb1VSwGMAphvspkYuvv8/U1OGsLvOGHODPVG11m3BkDxoQfYD2NRiREKIu40xn9tyoSZ3tAxDUts18qKIvJAUxBjjDg0N5YIgsBDHamoWe65s9zzvvUpk8gkycOh2B3K53HpjzLdJQBpAhOY0xigLms1mtzqO835CmFXlFO/7/p8ick0DmFoHGwAcaVK9lacuIcx3Sqne8Kx5FcCzMSDVkNucAeBowsIpKcxupdQrZZBKUXRaRC6PgDk9Pz+/rqOj47YWIMoyJJ/zPG+P7/t2irbVa5M8093dfV1/f/+/1cLI9/1nRGRPTFS+IbkuYSQWSZC0Ebw/SjcEtc+qIPl8vrNQKBwXkVuTLNwlGHOqs7Nz7cDAwIVFIPZHNptd7TjOzyJiG6tlu0ieN8b0Dg8PnwydRLUTtgr7aNkoRGz11ue67me1PuIarKdIvi0inUsJZNtPx3G2uq57qF63Ucu5fmFh4VCCEjIRa/mEBfqUUqeiDBo24RMTEyu6urpsfrE7qt11c5bky8Vi8c1MJmNbzsgr0WsJ3/dt07WT5BYANyUKgYjN1rpUKr3e6C1A7GJt5qTyluAhEVkrIjeTXGNrU5ucAJwhabvFd2dnZ4+OjY2ZZnrh8/8AFLwhm7VKABYAAAAASUVORK5CYII=") no-repeat;
+  background-size:cover;
+  margin-right:10rpx;
+}
+
+.s-recently-item:before {
+  content: "";
+  height: 1px;
+  background:#ececec;
+  position:absolute;
+  bottom:0;
+  left: 20rpx;
+  right:0;
+}
+
+.s-recently-item:last-child:before {
+  background:transparent; 
+}

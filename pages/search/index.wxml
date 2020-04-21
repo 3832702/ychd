@@ -1,0 +1,30 @@
+<!-- 头部 -->
+<header bg="#fb6464" title="搜索"></header>
+
+<!-- 搜索框 -->
+<view class="s-search">
+  <input 
+    placeholder="输入要搜索的商品" 
+    class="s-search-text"
+    bindinput='getKeyword'
+  >
+  </input>
+  <view catchtap='search' class="s-search-btn">搜索</view>
+</view>
+
+<!-- 热门搜索 -->
+<!--<hot isHide="{{ searchData.length == 0 }}"></hot>-->
+
+<!-- 最近搜索 -->
+<!--<recently isHide="{{ searchData.length == 0 }}"></recently>-->
+
+
+<!-- 产品列表 -->
+<product-list
+  nearData="{{ searchData }}"
+  isHeadHide="{{ true }}"
+  isTabHide="{{ true }}"
+>
+</product-list>
+
+<view style="display:{{ isNot ? 'flex': 'none' }}" class="s-not">未查询到相关的商品</view>

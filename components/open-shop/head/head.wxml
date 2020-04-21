@@ -1,0 +1,34 @@
+<view class="s-shop-head">
+  <view class="s-shop">
+    <view class="s-shop-img-wrap">
+      <image src="{{ shopInfo.store_head }}" class="s-shop-img"></image>
+    </view>
+    <view class="s-shop-info">
+      <text class="s-shop-name">{{ shopInfo.store_name }}</text>
+      <view class="s-shop-score">
+        <view class="s-shop-stars">
+          <text class="s-shop-stars-item"></text>
+          <text class="s-shop-stars-item"></text>
+          <text class="s-shop-stars-item"></text>
+          <text class="s-shop-stars-item"></text>
+          <text class="s-shop-stars-item"></text>
+        </view>
+        <text class="s-shop-score-txt">5.0分</text>
+      </view>
+    </view>
+  </view>
+  <view class="s-more">
+    <view class="s-more-item">
+      <text class="s-more-item-num">{{ storecount.swa }}</text>
+      <text class="s-more-item-txt">总访问量</text>
+    </view>
+    <view class="s-more-item">
+      <text class="s-more-item-num">{{ storecount.people }}</text>
+      <text class="s-more-item-txt">累计访客</text>
+    </view>
+    <view class="s-more-item">
+      <text class="s-more-item-num">{{ storecount.focus }}</text>
+      <text class="s-more-item-txt">总关注数</text>
+    </view>
+  </view>
+</view>

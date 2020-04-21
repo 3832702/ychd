@@ -1,0 +1,17 @@
+<!-- 头部 -->
+<header bg="#fb6464" title="分类列表"></header>
+
+<view class="s-entrance">
+  <view class="s-entrance-list">
+    <view 
+      wx:for="{{ category }}" 
+      wx:key="{{ index }}" 
+      class="s-entrance-item"
+      catchtap='jumpColumn'
+      data-index="{{ index }}"
+    >
+      <image lazy-load src="{{ item.icons }}" class="s-entrance-ico"></image>
+      <text class="s-entrance-name">{{ item.cate_name }}</text>
+    </view>
+  </view>
+</view>

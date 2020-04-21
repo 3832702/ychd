@@ -1,0 +1,16 @@
+<view wx:if="{{ isHide }}" class="s-hot">
+  <view class="s-hot-head">热门搜索</view>
+  <view class="s-hot-list">
+    <view class="s-hot-item">热门搜</view>
+    <view class="s-hot-item">热门搜索一</view>
+    <view class="s-hot-item">热门索</view>
+    <view class="s-hot-item">热门一</view>
+    <view class="s-hot-item">热门索一</view>
+    <view class="s-hot-item">热门搜索一</view>
+    <view class="s-hot-item">热搜一</view>
+    <view class="s-hot-item">热门搜</view>
+    <view class="s-hot-item">热搜索一</view>
+    <view class="s-hot-item">热门搜索一</view>
+    <view class="s-hot-item">热门搜</view>
+  </view>
+</view>

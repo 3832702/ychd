@@ -1,0 +1,22 @@
+<view id="header" style="background:{{ bg }}" class="s-base-head {{ is_000 ? 's-base-000': '' }}">
+  <view style="height:{{ statusBarHeight }}" class=""></view>
+  <view class="s-header-t">
+    <view 
+      hidden="{{ isBack }}" 
+      class="s-header-back"
+      catchtap='backHandler'
+    >
+      返回
+    </view>
+    <view 
+      hidden="{{ !isShare }}" 
+      class="s-header-back"
+      catchtap='homeHandler'
+      style="background:{{ bg }}"
+    >
+      首页
+    </view>
+    <text class="s-header-t-title {{ is_000 ? 's-header-t-title1': '' }}">{{ title }}</text>
+  </view>
+</view>
+<view hidden="{{ isHeaderHide }}" style="height: {{ statusBarHeight }};padding-bottom:86rpx;background:#fff"></view>

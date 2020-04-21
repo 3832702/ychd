@@ -1,0 +1,18 @@
+<view class="s-entrance">
+  <view class="s-entrance-head">
+    <text class="s-entrance-head-title">商品分类</text>
+    <text class="s-entrance-head-more" catchtap='jumpCategories'>更多</text>
+  </view>
+  <view class="s-entrance-list">
+    <view 
+      wx:for="{{ category }}" 
+      wx:key="{{ index }}" 
+      class="s-entrance-item"
+      catchtap='jumpColumn'
+      data-index="{{ index }}"
+    >
+      <image src="{{ item.icons }}" class="s-entrance-ico"></image>
+      <text class="s-entrance-name">{{ item.cate_name }}</text>
+    </view>
+  </view>
+</view>

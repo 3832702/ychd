@@ -1,0 +1,151 @@
+.s-near {
+  width: 100%;
+  background:#fff;
+}
+
+.s-near-head {
+  width: 100%;
+  height:78rpx;
+  line-height:78rpx;
+  display:flex;
+  align-content:center;
+  justify-content:space-between;
+  font-size:30rpx;
+  box-sizing:border-box;
+  padding:0 30rpx;
+}
+
+.s-near-head-more {
+  display:flex;
+  align-items:center;
+  font-size:24rpx;
+}
+
+.s-near-head-more:after {
+  content:" ";
+  width: 10rpx;
+  height:10rpx;
+  border:1px solid transparent;
+  border-top-color:#000;
+  border-left-color:#000;
+  transform:rotate(135deg);
+  margin-left:10rpx;
+}
+
+.s-tabbar {
+  width: 100%;
+  height: 62rpx;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  box-sizing:border-box;
+  padding:0 30rpx;
+}
+
+.s-tabbar-item {
+  height: 100%;
+  line-height:62rpx;
+  font-size:28rpx;
+}
+
+.s-near-list {
+  width: 100%;
+}
+
+.s-near-item {
+  width: 100%;
+  height:250rpx;
+  box-sizing:border-box;
+  border-bottom:1px solid #eeeeee;
+  padding: 27rpx 30rpx;
+  display:flex;
+  justify-content:space-between;
+}
+
+.s-ad-item {
+  padding:0;
+  display:flex;
+  justify-content:center;
+  border:none;
+}
+
+.s-ad-img {
+  width: 700rpx;
+  height: 100%;
+}
+
+.s-near-img {
+  width: 258rpx;
+  height: 206rpx;
+  border-radius:4px;
+}
+
+.s-near-info {
+  width: 57.5%;
+}
+
+.s-near-title {
+  width: 100%;
+  height: 50rpx;
+  line-height:50rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  font-size:30rpx;
+  color:#080808;
+  margin-bottom:5rpx;
+}
+
+.s-near-address {
+  width: 100%;
+  height: 28rpx;
+  line-height:28rpx;
+  font-size: 24rpx;
+  color:#5d5d5d;
+  display:flex;
+  justify-content:space-between;
+}
+
+.s-near-address-text {
+  width: 75%;
+  height: 100%;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.s-near-address-distance {
+  width: 25%;
+  height: 100%;
+  overflow:hidden;
+  text-align:right;
+}
+
+.s-near-shop {
+  width: 100%;
+  height: 50rpx;
+  line-height:50rpx;
+  font-size: 24rpx;
+  color:#000;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  display:block;
+}
+
+.s-near-desc {
+  width: 100%;
+  height:50rpx;
+  line-height:50rpx;
+  font-size:24rpx;
+  color:#565656;
+  display:block;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.s-active {
+  color:#fb6464;
+}
+

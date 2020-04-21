@@ -1,0 +1,10 @@
+.s-swiper {
+  width: 100%;
+  height: 400rpx;
+  margin-bottom:10rpx;
+}
+
+.s-swiper-item, .s-swiper-image {
+  width: 100%;
+  height: 100%;
+}

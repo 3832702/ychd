@@ -1,0 +1,18 @@
+<view class="s-footer">
+  <view data-page="shop" catchtap='jumpPage' class="s-footer-item">
+    <text class="s-footer-img s-footer-img-shop"></text>
+    <text class="s-footer-title">店铺</text>
+  </view>
+  <view data-page="all" catchtap='jumpPage' class="s-footer-item">
+    <text class="s-footer-img s-footer-img-all"></text>
+    <text data-page="all" catchtap='jumpPage' class="s-footer-title">全部商品</text>
+  </view>
+  <button catchtap='shareHandler' hover-class="none" open-type="share" class="s-footer-item">
+    <text class="s-footer-img s-footer-img-collection"></text>
+    <text class="s-footer-title">分享</text>
+  </button>
+  <view data-page="contact" catchtap='jumpPage' class="s-footer-item">
+    <text class="s-footer-img s-footer-img-merchants"></text>
+    <text data-page="contact" catchtap='jumpPage' class="s-footer-title">联系商家</text>
+  </view>
+</view>

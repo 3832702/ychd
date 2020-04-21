@@ -1,0 +1,19 @@
+<view class="s-current">
+  <view class="s-current-head">
+    <view class="s-current-l">
+      <view class="s-current-price">
+        当前最高竞拍价
+        <text class="s-current-price-1">25.5</text>
+      </view>
+      <view class="s-current-origin">原竞拍价￥1</view>
+    </view>
+    <view class="s-current-r">
+      <text class="s-current-r-1">距离结束仅剩</text>
+      <text class="s-current-r-2">{{ countDownTime }}</text>
+    </view>
+  </view>
+  <view class="s-current-c">
+    若无人出价： <text class="s-current-c-sub">小梁</text>将以<text class="s-current-c-sub">￥25.5</text>拍中广告位
+  </view>
+  <view class="s-current-b">截止到发布前24小时,2小时内部付款订单作废</view>
+</view>

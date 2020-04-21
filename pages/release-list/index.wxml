@@ -1,0 +1,80 @@
+<!-- 头部 -->
+<header bg="#fb6464" title="商品列表"></header>
+
+<view style="top: {{ statusBarHeight }};padding-top:88rpx;" class="s-tab">
+  <view catchtap='searchTabHandler' data-index="1" class="s-tab-item {{ activeIndex == 1 ? 's-tab-item-active': '' }}">已通过</view>
+  <view catchtap='searchTabHandler' data-index="0" class="s-tab-item {{ activeIndex == 0 ? 's-tab-item-active': '' }}">待审核</view>
+  <view catchtap='searchTabHandler' data-index="2" class="s-tab-item {{ activeIndex == 2 ? 's-tab-item-active': '' }}">未通过</view>
+  <view class="s-tab-mask {{ 's-tab-mask' + activeIndex }}"></view>
+</view>
+
+<view class="s-list">
+  <view wx:for="{{ list }}" wx:key="{{ item.goods_id }}" class="s-item" >
+    <view class="s-item-t">
+      <image lazy-load src="{{ item.goods_cover }}" class="s-img"></image>
+      <view class="s-info">
+        <view class="s-title">{{ item.goods_name }}</view>
+        <text class="s-desc s-desc-price">￥{{ item.goods_new_price }}</text>
+        <text class="s-desc">活动时间: {{ item.goods_start_time }}</text>
+        <text class="s-desc">结束时间: {{ item.goods_end_time }}</text>
+      </view>
+    </view>
+    <view class="s-more">
+      <view 
+        class="s-more-edit"
+        catchtap='codeHandler'
+        data-index="{{ index }}"
+        hidden="{{ item.is_pass !== 1 }}"
+      >
+        小程序码
+      </view>
+      <view 
+        class="s-more-edit"
+        catchtap='postersHandler'
+        data-index="{{ index }}"
+        hidden="{{ item.is_pass !== 1 }}"
+      >
+        海报生成
+      </view>
+      <view 
+        class="s-more-edit"
+        catchtap='editHandler'
+        data-index="{{ index }}"
+        hidden="{{ item.is_pass === 0 }}"
+      >
+        编辑
+      </view>
+      <view 
+        data-index="{{ index }}" 
+        catchtap='rmHandler' 
+        class="s-more-rm"
+        hidden="{{ item.is_pass !== 0 }}"
+      >
+        删除
+      </view>
+
+      <view class="s-more-shelves-wrap" hidden="{{ item.is_pass !== 1 }}">
+        <view 
+          data-index="{{ index }}" 
+          catchtap='playHandler' 
+          class="s-more-shelves"
+          wx:if="{{ item.is_play }}"
+        >
+          上架
+        </view>
+
+        <view 
+          data-index="{{ index }}" 
+          catchtap='playHandler'  
+          class="s-more-shelves1"
+          wx:else
+        >
+          下架
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view style="display:{{ isNot ? 'flex': 'none' }}" class="s-not">当前栏目暂无待处理事项</view>

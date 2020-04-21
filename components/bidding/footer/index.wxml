@@ -1,0 +1,9 @@
+<view class="s-footer">
+  <view class="s-footer-l">客服</view>
+  <view class="s-footer-c">
+    <view class="s-footer-c-shift">-</view>
+    <view class="s-footer-c-input">1</view>
+    <view class="s-footer-c-unshift">+</view>
+  </view>
+  <view class="s-footer-r">出价</view>
+</view>

@@ -1,0 +1,13 @@
+<!-- 头部 -->
+<header bg="#fb6464" title="分类列表"></header>
+
+
+<!-- 产品列表 -->
+<product-list 
+  nearData="{{ goodsData }}"
+  isHeadHide="{{ true }}"
+  isTabHide="{{ true }}"
+>
+</product-list>
+
+<view style="display:{{ isNot ? 'flex': 'none' }}" class="s-not">该分类下还没有商品</view>

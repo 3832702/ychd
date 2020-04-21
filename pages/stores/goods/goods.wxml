@@ -1,0 +1,34 @@
+<!-- 头部 -->
+<header bg="#fb6464" title="全部商品"></header>
+
+<!-- 商品 -->
+<!--<product-list
+  nearData="{{ listData }}"
+  isHeadHide="{{ true }}"
+  isTabHide="{{ true }}"
+></product-list>
+-->
+
+<view class="s-list">
+  <view 
+    wx:for="{{ listData }}" 
+    wx:key="{{ item.goods_id }}" 
+    class="s-item"
+    catchtap='jumpPage'
+    data-index="{{ index }}"
+  >
+    <view class="s-item-t">
+      <image src="{{ item.goods_cover }}" class="s-img"></image>
+      <view class="s-info">
+        <view class="s-title">{{ item.goods_name }}</view>
+        <view class="s-desc s-desc-price"><text style="color:#ccc;font-size:24rpx;">活动价:</text> ￥{{ item.goods_new_price }}</view>
+        <text class="s-desc">活动时间: {{ item.goods_start_time }}</text>
+        <text class="s-desc">结束时间: {{ item.goods_end_time }}</text>
+        <!--<text class="s-desc">创建时间: {{ item.create_time }}</text>-->
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view style="display:{{ isNot ? 'flex': 'none' }}" class="s-not">商家暂未发布商品</view>

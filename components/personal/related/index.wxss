@@ -1,0 +1,45 @@
+.s-related {
+  width: 100%;
+  display:flex;
+  background:#fff;
+  margin-bottom:20rpx;
+}
+
+.s-related-item {
+  width: 33.333%;
+  height: 185rpx;
+  box-sizing:border-box;
+  padding: 50rpx 0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  color:#676767;
+  position:relative;
+}
+
+.s-related-item:after {
+  content: " ";
+  width: 1rpx;
+  height: 38rpx;
+  position:absolute;
+  right:0;
+  top: 73rpx;
+  background:#999999;
+}
+
+
+.s-related-item:last-child:after {
+  background:transparent;
+}
+
+.s-related-num {
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 30rpx;
+}
+
+.s-related-title {
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 28rpx;
+}

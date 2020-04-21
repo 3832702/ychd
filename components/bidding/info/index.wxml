@@ -1,0 +1,34 @@
+<view class="s-info">
+  <view class="s-info-head">选择广告位</view>
+  <view class="s-info-list">
+    <!--<view class="s-info-item">选择地区</view>-->
+    <picker
+      mode="region"
+      bindchange="bindRegionChange"
+      value="{{ region }}"
+      class="s-info-item"
+    >
+      <view class="s-info-picker">
+        {{ region[0] ? (region[0] == region[1] ? '': region[0]) : '选择地区' }}{{ region[1] }}
+      </view>
+    </picker>
+    <!--<view class="s-info-item">投放日期</view>-->
+    <picker
+      mode="date"
+      value="{{ date }}"
+      start="{{ startDate }}"
+      end="{{ endDate }}"
+      bindchange="bindDateChange"
+      class="s-info-item"
+    >
+      <view class="s-info-picker">
+        {{ date }}
+      </view>
+    </picker>
+    <view class="s-info-item">选择广告位</view>
+  </view>
+  <view class="s-info-wrap">
+    <image src="../../../static/image/shuffling_4.jpg" class="s-info-img"></image>
+  </view>
+  <view class="s-info-title">首页轮播图-广告位编号:01</view>
+</view>

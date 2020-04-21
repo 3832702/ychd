@@ -1,0 +1,24 @@
+<view class="s-footer">
+  <view class="s-footer-item s-footer-logo">
+    <image src="{{ storeInfo.store_head }}" class="s-footer-avatar"></image>
+  </view>
+  <button 
+    wx:for="{{ routes }}" 
+    wx:key="{{ index }}" 
+    class="s-footer-item"
+    catchtap='jumpHandler'
+    data-index="{{ index }}"
+    hover-class="none"
+  >
+    <text class="s-footer-ico {{ 's-footer-ico' + index }}"></text>
+    <text class="s-footer-title">{{ item.name }}</text>
+  </button>
+  <button 
+    class="s-footer-item"
+    hover-class="none"
+    open-type="share"
+  >
+    <text class="s-footer-ico s-footer-ico1"></text>
+    <text class="s-footer-title">店铺分享</text>
+  </button>
+</view>

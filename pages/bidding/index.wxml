@@ -1,0 +1,29 @@
+
+<!-- 头部 -->
+<header is_000="{{ true }}" bg="#fff"  title="广告竞拍"></header>
+
+<!-- 个人信息 -->
+<info 
+  date="{{ date }}"
+  bind:dateChange="dateChange"
+  startDate="{{ startDate }}"
+  endDate="{{ endDate }}"
+></info>
+
+<!-- 当前出价 -->
+<current
+  countDownTime="{{ countDownTime }}"
+></current>
+
+<!-- 竞拍记录 -->
+<!--<record></record>-->
+
+<!-- 竞拍须知 -->
+<instructions></instructions>
+
+<!-- 出价 -->
+<footer></footer>
+
+
+<!-- 城市选择 -->
+<!--<city></city>-->

@@ -1,0 +1,43 @@
+.s-details {
+  background:#fff;
+  margin-bottom:20rpx;
+  padding-bottom:30rpx;
+  border-radius:10rpx;
+  overflow:hidden;
+  padding-top:20rpx;
+}
+
+.s-details-title {
+  width: 100%;
+  box-sizing:border-box;
+  height:124rpx;
+  line-height: 124rpx;
+  text-align:center;
+  padding:0 30rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  font-size:36rpx;
+}
+
+.s-details-content {
+  width: 100%;
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+  line-height:40rpx;
+  font-size:30rpx;
+  color:#000000;
+}
+
+.s-details-content image {
+  width: 750rpx;
+  height:450rpx;
+  align-self:center;
+}
+
+.s-details-content text {
+  padding: 40rpx 20rpx;
+  line-height: 50rpx;
+  color:#676767;
+}

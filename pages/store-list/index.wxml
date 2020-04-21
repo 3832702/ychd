@@ -1,0 +1,10 @@
+<!-- 头部 -->
+<header bg="#fb6464" title="商家列表"></header>
+
+<!-- 优选商家 -->
+<merchant-list 
+  isHeadHide="{{ true }}"
+  isTabHide="{{ true }}"
+  nearShops="{{ listData }}"
+>
+</merchant-list>

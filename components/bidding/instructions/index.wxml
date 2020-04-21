@@ -1,0 +1,9 @@
+<view class="s-instructions">
+  <view class="s-instructions-head">竞拍须知</view>
+  <view class="s-instructions-list">
+    <view class="s-instructions-item">1.<text>用户可以按照系统提示，在当前价格的基础之上出价；</text></view>
+    <view class="s-instructions-item">2.<text>拍卖结束后，出价最高者胜出；</text></view>
+    <view class="s-instructions-item">3.<text>用户可以在广告位竞拍页随时关注拍卖剩余时间、当前价格、出价记录等信息。</text></view>
+    <view class="s-instructions-item">4.<text class="colorfb6564">胜出者请立即加客服微信处理支付等相关事宜，2小时内未付款则此次竞拍作废</text>，最终解释权归壹城好店所有。</view>
+  </view>
+</view>

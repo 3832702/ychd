@@ -1,0 +1,76 @@
+<view class="s-near">
+  <view hidden="{{ isHeadHide }}" class="s-near-head">
+    <text class="s-near-head-title">附近商家</text>
+    <!--<text class="s-near-head-more">更多</text>-->
+  </view>
+  <view hidden="{{ isTabHide }}" class="s-tabbar">
+    <view 
+      class="s-tabbar-item {{ activeIndex == 0 ? 'active': '' }}"
+      data-index="0"
+      catchtap='searchHandler'
+    >
+      最热门店
+      <text class="s-tabbar-ico"></text>
+    </view>
+    <view 
+      class="s-tabbar-item {{ activeIndex == 1 ? 'active': '' }}"
+      data-index="1"
+      catchtap='searchHandler'
+    >
+      最新发布
+      <text class="s-tabbar-ico"></text>
+    </view>
+    <view 
+      class="s-tabbar-item {{ activeIndex == 2 ? 'active': '' }}"
+      data-index="2"
+      catchtap='searchHandler'
+    >
+      离你最近
+      <text class="s-tabbar-ico"></text>
+    </view>
+  </view>
+
+  <view hidden="true" class="s-view">  
+    <view hidden="true" class="s-view-list">
+      <view class="s-view-item s-view-item-active"><i class="s-view-list-ico"></i>附近 （智能距离）</view>
+      <view class="s-view-item"><i></i>1千米</view>
+      <view class="s-view-item"><i></i>3千米</view>
+      <view class="s-view-item"><i></i>5千米</view>
+      <view class="s-view-item"><i></i>10千米</view>
+    </view>
+    <view hidden="true" class="s-view-list">
+      <view class="s-view-item s-view-item-active"><i class="s-view-list-ico"></i>智能排序</view>
+      <view class="s-view-item"><i></i>离我最近</view>
+    </view>
+    <view hidden="true" class="s-view-list s-view-list1">
+      <view class="s-view-item1 s-view-item-active1">母婴</view>
+      <view class="s-view-item1">母婴</view>
+    </view>
+  </view>
+
+  <view class="s-near-list">
+    <view 
+      class="s-near-item" 
+      catchtap='jumpPage'
+      wx:for="{{ nearShops }}"
+      wx:key="{{ index }}"
+      data-index="{{ index }}"
+    >
+      <image lazy-load src="{{ item.store_head }}" class="s-near-img"></image>
+      <view class="s-near-info">
+        <view class="s-near-title">{{ item.store_name }}</view>
+        <view class="s-near-address">
+          <view class="s-near-address-ico"></view>
+          <view class="s-near-address-text"> {{ item.address }}</view>
+          <view class="s-near-address-distance">{{ item.distance >= 0.1 ? item.distance : '<0.1' }}km</view>
+        </view>
+        <view class="s-near-desc-wrap">
+          <text class="s-near-desc-ico"></text>
+          <view class="s-near-desc">
+            {{ item.store_about }}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

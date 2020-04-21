@@ -1,0 +1,20 @@
+.s-banner-wrap {
+  width: 100%;
+  position:relative;
+}
+
+.s-banner {
+  width: 100%;
+  height: 600rpx;
+  margin-bottom:10rpx;
+}
+
+.s-banner-item {
+  width: 100%;
+  height: 600rpx;
+}
+
+.s-banner-img {
+  width: 100%;
+  height: 100%;
+}

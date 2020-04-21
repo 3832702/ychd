@@ -1,0 +1,6 @@
+<view hidden="{{ is_hide }}" class="s-related">
+  <view wx:for="{{ relatedData }}" wx:key="{{ index }}" class="s-related-item">
+    <text class="s-related-num">{{ item.num }}</text>
+    <text class="s-related-title">{{ item.title }}</text>
+  </view>
+</view> 

@@ -1,0 +1,81 @@
+.s-record {
+  width: 100%;
+  background:#fff;
+  margin-bottom:20rpx;
+}
+
+.s-record-head {
+  width: 690rpx;
+  margin:0 auto;
+  height: 75rpx;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  font-size: 28rpx;
+  color:#000000;
+  border-bottom:1px solid #ed5749;
+  padding:0 22rpx 0 5rpx;
+}
+
+.s-record-head:after {
+  content: " ";
+  width: 10rpx;
+  height: 10rpx;
+  border:1px solid transparent;
+  border-top-color:#111111;
+  border-left-color:#111111;
+  transform:rotate(135deg);
+  margin-left:auto;
+}
+
+.s-record-list {
+  width: 100%;
+  padding-top:22rpx;
+  padding-bottom:50rpx;
+}
+
+.s-record-item {
+  width: 100%;
+  height: 46rpx;
+  box-sizing:border-box;
+  padding:0 35rpx;
+  display:flex;
+  align-items:center;
+  font-size: 26rpx;
+  color:#808080;
+  justify-content:space-between;
+}
+
+.s-record-item-1 {
+  width: 298rpx;
+  display:flex;
+}
+
+.s-record-item-1 text {
+  width: 278rpx;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  overflow:hidden;
+}
+
+.s-record-item-2 {
+  width: 110rpx;
+}
+
+.s-record-item-3 {
+  width: 180rpx;
+}
+
+.s-record-item-4 {
+  width: 110rpx;
+}
+
+.s-record-item-1, .s-record-item-2, .s-record-item-3, .s-record-item-4 {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.s-record-first {
+  color:#fa6567;
+}

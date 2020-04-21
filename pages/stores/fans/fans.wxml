@@ -1,0 +1,6 @@
+<!-- 头部 -->
+<header bg="#fb6464" title="粉丝群"></header>
+
+<view class="s-fans">
+  <image mode="aspectFill" class="s-fans-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1546676919491&di=eadb99f434bd4b6818774076966fca81&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01754c55fbaa4e32f875a132102e61.jpg%402o.jpg"></image>
+</view>

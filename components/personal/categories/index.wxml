@@ -1,0 +1,27 @@
+<view hidden="{{ is_hide }}" class="s-categories">
+  <view class="categories-title">{{ title }}</view>
+  <view class="categories-list">
+    <button 
+      class="categories-item"
+      wx:for="{{ routes }}"
+      wx:key="{{ index }}"
+      data-index="{{ index }}"
+      catchtap='jumpPage'
+      hover-class="none"
+    >
+      <text class="categories-item-ico" style="background:url({{ item.ico }});background-size:cover"></text>
+      <text class="categories-item-title">{{ item.title }}</text>
+      <text hidden="{{ is_pass !== 0 }}" class="categories-item-title2">审核中</text>
+      <text hidden="{{ is_pass !== 2 }}" class="categories-item-title2">审核未通过</text>
+    </button>
+    <button 
+      class="categories-item"
+      hidden="{{ isHideShare }}"
+      hover-class="none"
+      open-type="share"
+    >
+      <text class="categories-item-ico s-share-ico"></text>
+      <text class="categories-item-title">店铺分享</text>
+    </button>
+  </view>
+</view>

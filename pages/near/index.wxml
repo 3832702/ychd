@@ -1,0 +1,14 @@
+
+<!-- 头部 -->
+<header is_000="{{ true }}" isBack="{{ true }}" bg="#fff"  title="商家"></header>
+
+<!-- 附近商家 -->
+<merchant-list 
+  isHeadHide="{{ true }}"
+  nearShops="{{ nearShops }}"
+  bind:searchHandler="searchHandler"
+  activeIndex="{{ index }}"
+>
+</merchant-list>
+
+<view style="display:{{ isNot ? 'flex': 'none' }}" class="s-not">暂未有商家入驻</view>

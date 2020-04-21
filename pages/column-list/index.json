@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "product-list": "/components/home-list/index",
+    "header": "/components/header/header"
+  }
+}

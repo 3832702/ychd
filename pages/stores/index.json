@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "merchant-list": "/components/merchant-list/merchant-list",
+    "header": "/components/header/header"
+  }
+}

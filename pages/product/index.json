@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "goods": "/components/product/goods/goods",
+    "details": "/components/product/details/details",
+    "product-list": "/components/product-list/product-list",
+    "footer": "/components/product/footer/footer",
+    "header": "/components/header/header"
+  }
+}

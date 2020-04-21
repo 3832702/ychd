@@ -1,0 +1,163 @@
+<!--<view style="height:{{ statusBarHeight }};background:#000;" class="s-top-placeholder"></view>
+<view style="height:{{ statusBarHeight }};background:#fff"></view>-->
+<!-- 头部 -->
+<header bg="#fb6464" title="请填写门店信息"></header>
+
+<view class="s-management">
+  <!--<view class="s-banner">
+    <image class="s-banner-img" src="/static/image/management.jpg"></image>
+  </view>
+  -->
+  <view class="s-avatar">
+    <text class="s-avatar-text">上传店铺头像</text>
+    <view 
+      class="s-avatar-img s-add-img" 
+      wx:if="{{ avataData.length === 0 }}"
+      catchtap='uploadAvatar'
+    >
+    </view>
+    <view catchtap='uploadAvatar' class="s-avatar-img" wx:else>
+      <image 
+        wx:for="{{ avataData }}" 
+        wx:key="{{ index }}" 
+        src="{{ item }}"
+      ></image>
+      <view class="s-avatar-title">更换头像</view>
+    </view>
+  </view>
+
+  <view class="s-name">
+    <text class="s-avatar-text">店铺名称</text>
+    <input 
+      class="s-name-input" 
+      placeholder="请输入店铺名称"
+      bindinput="getShopName"
+      value="{{  shopName }}"
+    >
+    </input>
+  </view>
+
+  <view class="s-address">
+    <text class="s-avatar-text">店铺地址</text>
+    <input 
+      class="s-name-input"
+      bindinput="getShopAddress" 
+      placeholder="请输入店铺地址"
+      value="{{ shopAddress }}"
+    >
+    </input>
+    <view 
+      catchtap="chooseLocation" 
+      class="s-address-location"
+    >
+      设置定位
+    </view>
+  </view>
+
+  <!--<view class="s-timer">
+    <text class="s-avatar-text">营业时间</text>
+    <input 
+      class="s-name-input" 
+      placeholder="请输入营业时间(如10:00 - 23:00)"
+      bindinput="getShopTime"
+      value="{{ shopTime }}"
+    >
+    </input>
+  </view>
+  -->
+  <view style="margin:0;" class="s-timer">
+    <text class="s-avatar-text">营业时间</text>
+    <picker
+      mode="time"
+      start="00:00"
+      end="23:59"
+      value="{{ startTime === '请选择营业时间' ? '09:00' : startTime }}"
+      bindchange="startTimeChange"
+    >
+      <view class="picker">{{ startTime }}<text class="click-ccc">(点击选择营业时间)</text></view>
+    </picker>
+  </view>
+  <view class="s-timer">
+    <text class="s-avatar-text">打烊时间</text>
+    <picker
+      mode="time"
+      start="00:00"
+      value="{{ endTime === '请选择结束时间' ? startTime === '请选择营业时间' ? '21:00' : startTime : endTime }}"
+      end="23:59"
+      bindchange="endTimeChange"
+    >
+      <view class="picker">{{ endTime }}<text class="click-ccc">(点击选择打烊时间)</text></view>
+    </picker>
+  </view>
+  <!--<view class="s-timer">
+    <text class="s-avatar-text">营业时间</text>
+    <picker
+      mode="time"
+      value="{{ shopTime }}"
+      start="00:00"
+      end="23:59"
+      bindchange="bindTimeChange"
+    >
+      <view class="picker">{{ shopTime }}</view>
+    </picker>
+  </view>
+
+  <view class="s-timer">
+    <text class="s-avatar-text">打烊时间</text>
+    <picker
+      mode="time"
+      value="{{ endTime }}"
+      start="00:00"
+      end="23:59"
+      bindchange="bindTimeChange"
+    >
+      <view class="picker">{{ endTime }}</view>
+    </picker>
+  </view>-->
+
+  <view class="s-desc">
+    <text class="s-avatar-text">店铺简介</text>
+    <textarea 
+      cursor-spacing="100"
+      placeholder-style="color:#969696;" 
+      placeholder="请输入店铺简介(30字以内)" 
+      class="s-avatar-textarea"
+      bindinput="getShopDesc"
+      value="{{ shopDesc }}"
+      maxlength='30'
+    >
+    </textarea>
+    <cover-view wx:if="{{ shopDesc.length < 30 }}" class="s-desc-num">{{ shopDesc.length }} / 30</cover-view>
+    <cover-view wx:else style="color:#f77a06" class="s-desc-num">您已达到最大输入限制</cover-view>
+  </view>
+
+  <view class="s-img">
+    <text class="s-avatar-text">店铺图片</text>
+    <view class="s-img-view">
+      <view class="s-img-prompt">为保证显示效果，建议上传三张以上图片</view>
+      <view class="s-img-list">
+        <view 
+          wx:for="{{ imageData }}" 
+          wx:key="{{ index }}" 
+          class="s-img-item s-img-itemimg"
+        >
+          <image mode="aspectFit" src="{{ item }}"></image>
+          <text 
+            data-index="{{ index }}" 
+            catchtap='removeImageHandler' 
+            class="s-img-remove"
+          >
+          </text>
+        </view>
+        <view 
+          catchtap='uploadImage' 
+          hidden="{{ chooseImageLength >= 9 }}" 
+          class="s-img-item"
+        >
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view catchtap='submitHandler' class="s-submit">提交</view>
